@@ -1,0 +1,13 @@
+PRINTING OUT WITHOUT USING SCIENTIFIC NOTATION:
+    cout<<fixed<< a << endl;
+
+    If i have a big number example:
+        double a = -5279235.721231465;
+        cout << a;
+    ^ This will print: -5.27924e+06
+
+    If we want to print the full number without scientific notation all we do
+    is:
+        double a = -5279235.721231465;
+        cout <<fixed<< a;
+    ^ This will print: -5279235.721231465

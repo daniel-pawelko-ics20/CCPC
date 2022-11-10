@@ -1,0 +1,73 @@
+HEADERS AND STUFF:
+    Have you ever seen a c++ program that doesnt use headers, me neither.
+    Few useful ones:
+        #include <string> - used for string data type
+        #include <iosteam> - used for input output(cout and cin)
+        
+        #include <bits/stdc++.h> - This is a special one, it should only be
+                                    used when doing competitive programming 
+                                    as you wont have to type out
+                                    every header used(like string or iostream
+                                    or cmath or smt like that)(might not work
+                                    with other compilers other than gcc)
+
+    Namespaces:
+        using namespace std;
+            This prevents you from writing std::cout or something similar
+            everytime you call a keyword/function type thing every time.
+
+
+
+INPUT:
+    cin >> input_variable;
+
+OUTPUT:
+    cout << output;
+    or
+    cout << output << endl;
+
+DATA TYPES:
+The things inside the parenthases are called format specifiers
+format specifiers arent really used when using cin and cout but are used for
+printf and scanf, DONT USE PRINTF AND SCANF IN C++, they are really only use in
+C and are considered "naughty" in C++.
+    int("%d"): 32 bit integer
+    long("$ld"): 64 bit integer
+    char("%c"): 8 bit character type
+    float("%f"): 32 bit floating point number
+    double("%lf"): 64 bit floating point number
+    string("%s"): Dynamically allocated memmory(Technaclly there is a limit but
+                                                    not one you are likely to
+                                                    exeed)
+
+CONDITIONAL EXPRESSIONS:
+    if(condition) {
+        ***
+    }
+    else if(condition) {
+        ***
+    }
+    else {
+        ***
+    }
+
+ARRAYS:
+    type name[size] = {val1, val2, val3...};
+    Example:
+        string a[9] = {"one", "two", "three", "four", "five", "six", "seven",
+        "eight", "nine"};
+
+    ELEMENT AT INDEX:
+        a[0] will get index 0 or "one"
+
+STRINGS:
+    string name = "asdasd";
+
+    Strings are nice in C++ as we can sort of treat them as an array
+    because...well its just an array of charachters. 
+
+    LENGTH:
+        name.size();
+
+    CHAR AT INDEX:
+        name[i];
