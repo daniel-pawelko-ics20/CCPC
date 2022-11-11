@@ -11,3 +11,26 @@ PRINTING OUT WITHOUT USING SCIENTIFIC NOTATION:
         double a = -5279235.721231465;
         cout <<fixed<< a;
     ^ This will print: -5279235.721231465
+
+STORING SPACE SEPERATED SEQUENCE INTO ARRAY:
+    int n;
+    cin >> n;
+    int array[n];
+    for (int i = 0; i < n; i++) {
+        cin >> array[i];
+    }
+
+    If we want to recieve a squence of integers or whatever in one line and
+    store it but we dont know the size of the array at compile time, but we are
+    given the input size at runtime then we can simply create an array with n
+    elements and store it with a for loop
+
+    The code above will work with input like:
+        4
+        0 5 4 3
+    or
+        6
+        1 2 3 4 5 6
+
+    Stuff like this where the size of the array is given at runtime through
+    input or something similar
