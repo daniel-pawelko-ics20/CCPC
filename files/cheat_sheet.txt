@@ -60,6 +60,25 @@ ARRAYS:
     ELEMENT AT INDEX:
         a[0] will get index 0 or "one"
 
+    LENGTH:
+        (sizeof(a) / sizeof(a[0]))
+
+        To explain we cant directly get the total elements in the array, what
+        we can do is get the allocated space(amount of bytes) of the array and
+        then get the allocated bytes for one of the elements and then do a
+        simple division to get the length of the array. The "sizeof" operator
+        returns the amount of bytes allocated to whatever is passed in as a
+        parameter.
+
+    SORT:
+        int size = (sizeof(a) / sizeof(a[0]));
+        sort(a, a+size);
+
+        "sort" is a builtin function with the STL(Standard Template Library),
+        first param is the array, and second is until when you wanna sort it,
+        so if I wanted to sort the entire array I would write "array + size",
+        size being the length of the array.
+
 STRINGS:
     string name = "asdasd";
 
